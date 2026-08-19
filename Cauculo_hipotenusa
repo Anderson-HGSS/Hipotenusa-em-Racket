@@ -1,0 +1,11 @@
+#lang racket
+
+(displayln "Insira o valor do cateto A:")
+(define catetoA (string->number(read-line)))
+
+(displayln "Insira o valor do cateto B:")
+(define catetoB (string->number(read-line)))
+
+(define (hipotenusa catetoA catetoB) (sqrt (+(* catetoA catetoA) (* catetoB catetoB))))
+
+(printf "A soma dos catetos ~a e ~a é ~a" catetoA catetoB (hipotenusa catetoA catetoB))
